@@ -1,0 +1,20 @@
+
+h1{
+    color:  fuchsia; 
+}
+
+.myHeader2 {
+    color: red;
+}
+
+.myHeader {
+    font-size: 40px;
+    color: blue;
+}
+
+
+
+#myHeaderID {
+    font-style: italic;
+    color: green;
+}

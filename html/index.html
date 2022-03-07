@@ -29,6 +29,8 @@
     <meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -38,8 +40,13 @@
     ul>li*5{item $}
     -->
   
+    <!-- camel case myHeaderHeader-->
+    <!-- snake case my_header_header -->
+
+    <h1 class="myHeader2 myHeader" >Header 1</h1>
     <h1>Header 1</h1>
-    <h2>Header 2</h2>
+
+    <h2 class="myHeader" id="myHeaderID2">Header 2</h2>
     <h3>Header 3</h3>
 
     <header>
@@ -92,12 +99,36 @@
             <input type="file">
             <input type="week">
 
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Choose check ...</legend>
+                <input type="checkbox" name="check_1" value="1">Check 1 <br>
+                <input type="checkbox" name="check_2" value="1">Check 2 <br>
+                <input type="checkbox" name="check_3" value="1">Check 3 <br>
+            </fieldset>
+
+            <br>
+            <br>
+            <fieldset>
+                <legend>Choose radio ...</legend>
+                <input type="radio" name="radio_1" value="1">Radio 1 <br>
+                <input type="radio" name="radio_1" value="2">Radio 2 <br>
+                <input type="radio" name="radio_1" value="3">Radio 3 <br>
+            </fieldset>
 
             <input type="button" value="Click me">
             <input type="reset" value="Reset all">
             <input type="submit" value="Send">
         </form>
+
+
+
     </section>
+
+
+
 
     <footer>
         <address>tallinn, Estonia</address>

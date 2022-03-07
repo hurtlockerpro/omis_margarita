@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+
+body {
+    background: rgb(209,67,210);
+    background: linear-gradient(260deg, rgba(209,67,210,1) 0%, rgba(80,71,217,1) 100%);
+    font-family: 'Roboto', sans-serif; 
+}
+
+.mainLoginBox{
+    width: 80%; /* px -> em, rem  */
+    height: 250px;
+    border: 1px solid gray;
+    /* 
+    border-width: 1px;
+    border-style: double;
+    border-color: gray; 
+    */
+    border-radius: 7px;
+
+    /* box-shadow: top left botton right; */
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
+    background-color: white;
+    margin: auto;
+    margin-top: 146px;
+}
+.leftCol{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.rightCol{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.mainLoginBox img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-top: 61px;
+
+    -webkit-box-shadow: -5px 10px 20px 0px rgba(0,0,0,0.5); 
+    box-shadow: -5px 10px 20px 0px rgba(0,0,0,0.5);
+}
+
+.rightCol h2 {
+    font-weight: 400;
+}
+
+/* FORM */ 
+
+.frmElementSize {
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+}
+
+input[name="username"], input[name="password"] {
+   border: 0;
+   background-color: rgb(230, 230, 230);
+   margin-bottom: 10px;
+}
+
+input[type=button] {
+    background-color: rgb(3, 182, 3);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(18, 151, 0);
+    text-transform: capitalize;
+    color: white;
+    margin-top: 5px;
+}
+
+/* link */
+
+#forgotLink {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+}
