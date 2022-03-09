@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/v5-font-face.min.css" integrity="sha512-Ipf6bU2dOLSG8/16GCm8MfSEcNMAIQloGhcn+5o5FRRkmBIvShWK2IAZQX69PPd1aiZx0cZoLWTmWRSW68tPYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
-
-
 
     <div class="mainLoginBox">
         <div class="leftCol">
@@ -20,13 +21,42 @@
 
             <h2>User Login</h2>
             <form action="">
-                <input type="text" class="frmElementSize" name="username" placeholder="email id" >
-                <input type="password" class="frmElementSize" name="password" placeholder="password" >
+
+                <div class="inputWrapper">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="frmElementSize" name="username" placeholder="email id" >
+                </div>
+
+                <div class="inputWrapper">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="frmElementSize" name="password" placeholder="password" >
+                </div>
+
+                <div class="inputWrapper withIcon">
+                    <input type="password" class="frmElementSize" name="password" placeholder="password" >
+                </div>
+
                 <input type="button" class="frmElementSize" value="login">
             </form>
 
             <br>
-            <a href="#" id="forgotLink">Forgot username / password</a>
+            <a href="http://google.com" id="forgotLink">Forgot username / password</a>
+
+            <!--
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+            -->
+
+
+            <div id="pseudoTest">
+                " text text text text 
+            </div>
+
 
         </div>
     </div>

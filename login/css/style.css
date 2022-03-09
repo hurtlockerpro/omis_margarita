@@ -61,6 +61,10 @@ input[name="username"], input[name="password"] {
    border: 0;
    background-color: rgb(230, 230, 230);
    margin-bottom: 10px;
+   outline: none;
+   padding-left: 30px;
+   box-sizing: border-box;
+   color: gray;
 }
 
 input[type=button] {
@@ -79,4 +83,78 @@ input[type=button] {
     color: gray;
     text-decoration: none;
     font-size: 12px;
+}
+
+
+/* positioning */ 
+
+.inputWrapper {
+    position: relative;
+}
+.inputWrapper .fa-lock, .inputWrapper .fa-envelope {
+    font-size: 12px;
+    position: absolute;
+    top: 9px;
+    left: 35px;
+}
+
+/* pseudo classes */
+
+#forgotLink:hover { 
+    text-decoration: underline;
+    text-decoration-color: violet;
+} 
+#forgotLink:link {
+    color: yellow;
+}
+#forgotLink:active {
+    color: red;
+}
+#forgotLink:visited {
+    color: green;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    font-weight: bold;
+    color: blue;
+}
+
+ul li:nth-child(3) {
+    font-weight: bold;
+    color: green;
+}
+
+/* */
+
+#pseudoTest::before {
+    content: "\f084";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    
+    color: cornflowerblue;
+    font-size: 20px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+#pseudoTest::after {
+    content: "\"";
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+.withIcon::before {
+    content: "\f084";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    border: 1px solid red;
+    position: absolute;
+    top: 6px;
+    left: 33px;
 }
