@@ -1,0 +1,17 @@
+div:not(.progress):not(.progress-bar) {
+    border: 1px solid gray;
+}
+
+/* progress */
+.progress {
+    border-radius: 0;
+}
+.progress-bar {}
+
+.progress span {
+    position: relative;
+    top: -1px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
