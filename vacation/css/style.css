@@ -1,0 +1,32 @@
+/*html {
+    font-size: 32px;
+}*/
+.card{
+    width: 12.5em; /* em , rem */
+    border-radius: 0; 
+    height: 15em;
+}
+
+#vipZone .card:first-child {
+    margin-right: .9em;
+}
+#vipZone .card:last-child {
+    margin-left: .9em;
+}
+
+
+.card-img-overlay{
+    
+}
+
+
+
+/* COURUSEL */
+.carousel-item img {
+    object-fit: none;
+}
+
+.carousel-item {
+    height: 15.6em;
+    object-position: center;
+}
