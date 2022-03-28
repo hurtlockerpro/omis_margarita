@@ -16,7 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              
+              <a class="navbar-brand d-block d-md-none" href="#">Logo</a>
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -41,60 +43,156 @@
 
           <!-- SLIDER -->
 
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="container-fluid">
+            <div class="row">
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/slide_1.jpeg" class="d-block w-100" alt="Slide 1">
+                    <div class="slideTitle">
+                      <h3>Slide 1</h3>
+                      <button type="button">Get in touch</button>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="./img/slide_2.jpeg" class="d-block w-100" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slide_3.jpeg" class="d-block w-100" alt="Slide 3">
+                  </div>
+                  
+                </div>
+                <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>-->
+              </div>
+
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/slide_1.jpeg" class="d-block w-100" alt="Slide 1">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/slide_2.jpeg" class="d-block w-100" alt="Slide 2">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/slide_3.jpeg" class="d-block w-100" alt="Slide 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          
 
-          <!-- CARDS -->
-          <div class="d-flex justify-content-center" id="vipZone">
+          <!-- VIP CARDS -->
+          <div class="container-fluid" id="vipZone">
 
-            <div class="card bg-dark text-white">
-                <img src="./img/vip_1.jpg" class="card-img" alt="VIP 1">
-                <div class="card-img-overlay d-flex align-items-end justify-content-center">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex justify-content-end mt-2 mt-md-0">
+                <div class="card bg-dark text-white">
+                  <img src="./img/vip_1.jpg" class="card-img" alt="VIP 1">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                      <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-center mt-2 mt-md-0">
+                <div class="card bg-dark text-white">
+                    <img src="./img/vip_2.jpg" class="card-img" alt="VIP 2">
+                    <div class="card-img-overlay d-flex align-items-end justify-content-center">
                     <h5 class="card-title">Card title</h5>
+                    </div>
                 </div>
-            </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex justify-content-start mt-2 mt-md-0">
+                <div class="card bg-dark text-white">
+                  <img src="./img/vip_3.jpg" class="card-img" alt="VIP 3">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center">
+                  <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
 
-            <div class="card bg-dark text-white">
-                <img src="./img/vip_2.jpg" class="card-img" alt="VIP 2">
-                <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                <h5 class="card-title">Card title</h5>
-                </div>
-            </div>
+              </div>
 
-            <div class="card bg-dark text-white">
-                <img src="./img/vip_3.jpg" class="card-img" alt="VIP 3">
-                <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                <h5 class="card-title">Card title</h5>
-                </div>
-            </div>
+          </div>
         </div>
     </header>
-    
 
+    <div class="container-fluid d-flex justify-content-center" id="vipZone2">
+
+        <div class="card mb-2 mt-2">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./img/vip_4.jpg" class="img-fluid rounded-start" alt="VIP 4">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+
+                <ul class="nav mb-3 nav-justified" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button">Home</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button">Profile</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button">Contact</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">... 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est dolore ut voluptates voluptatibus voluptatum vero blanditiis, eos, laboriosam numquam adipisci a ipsum. Et unde quibusdam amet sed quo corporis.</div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">... 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati eveniet quidem debitis pariatur odit veniam cumque unde libero odio eligendi, quibusdam animi omnis distinctio ratione reiciendis nemo tempore, sequi nobis!</div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">... 3 lorem
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    
+    <div class="container-fluid d-flex justify-content-center secondVip" id="vipZone2">
+
+      <div class="card mb-2 mt-2">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="./img/vip_4.jpg" class="img-fluid rounded-start" alt="VIP 4">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              
+              <div class="priceTag">$750</div>
+
+              <h5 class="card-title">Card title 2</h5>
+
+              <ul class="nav mb-3 nav-justified" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button">Contact</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">... 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est dolore ut voluptates voluptatibus voluptatum vero blanditiis, eos, laboriosam numquam adipisci a ipsum. Et unde quibusdam amet sed quo corporis.</div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">... 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati eveniet quidem debitis pariatur odit veniam cumque unde libero odio eligendi, quibusdam animi omnis distinctio ratione reiciendis nemo tempore, sequi nobis!</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">... 3 lorem
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

@@ -1,19 +1,29 @@
 /*html {
     font-size: 32px;
 }*/
-.card{
-    width: 12.5em; /* em , rem */
-    border-radius: 0; 
-    height: 15em;
-}
 
+/*
 #vipZone .card:first-child {
     margin-right: .9em;
 }
+ 
 #vipZone .card:last-child {
     margin-left: .9em;
+}*/
+
+
+
+.card-img {
+    border-radius: 0; 
+    filter: grayscale(50%) contrast(50%);
+}
+.card img {
+    object-fit: cover;
 }
 
+.card {
+    object-position: center;
+}
 
 .card-img-overlay{
     
@@ -23,10 +33,141 @@
 
 /* COURUSEL */
 .carousel-item img {
-    object-fit: none;
+   /* object-fit: none; */
 }
 
 .carousel-item {
     height: 15.6em;
     object-position: center;
+}
+
+.slideTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 25px; /* TODO */
+}
+
+.slideTitle button {
+    border: 2px solid white;
+    background: none;
+    color: white;
+    font-size: 25px;
+}
+
+.carousel-indicators {
+    flex-direction: column;
+    justify-content: center;
+    left: auto !important;
+    top: 0;
+}
+
+.carousel-indicators button {
+    width: .4em !important;
+    height: .4em !important;
+    background-color: gray !important;
+}
+
+.carousel-indicators button.active {
+    background-color: green !important;
+}
+
+@media only screen and (max-width: 576px) {
+    .card{
+        width: 100%;
+        border-radius: 0; 
+        height: 15em;
+        border: 0;
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+    #vipZone .card{
+        width: 12.5em;
+        border-radius: 0; 
+        height: 15em;
+        border: 0;
+        flex-direction: row;
+    }
+
+    #vipZone {
+        position: relative;
+        top: -25px;
+    }
+
+    #vipZone2 .card {
+        width: 75%;
+        border-radius: 0; 
+    }
+}
+
+/* MENU */
+
+#navbarNav {
+    background-color: #162e44;
+    color: white;
+}
+/*
+#navbarNav .nav-item { 
+    box-sizing: border-box;
+}*/
+
+#navbarNav .nav-item a {
+    color: white;
+}
+
+#navbarNav .nav-item a:hover {
+    background-color: gainsboro;
+    box-shadow: inset 0px .125em 0px 0px green;
+}
+
+.navbar {
+    padding: 0;
+}
+
+/* center card */
+
+#vipZone2 .nav .nav-link {
+    text-transform: uppercase;
+    color: gray !important;
+    letter-spacing: .125em;
+    border: 0;
+    background: none;
+    border-bottom: 2px solid gray;
+}
+
+#vipZone2 .nav .nav-link.active {
+    color: #01b3a7 !important;
+    border-bottom: 2px solid #01b3a7;
+}
+
+#vipZone2 .tab-pane {
+    text-align: justify;
+}
+
+/* price tag */ 
+
+.priceTag {
+    background-color: #01b3a7;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 100%, 0 71%);
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
