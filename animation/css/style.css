@@ -1,0 +1,132 @@
+.square {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.18, 1.33, 0.69,-0.41);
+}
+
+@keyframes moveRight {
+    from{
+        /*background-color: red;*/
+        left: 0;
+    }
+    to{
+        background-color: blue;
+        left: 500px;
+        transform: rotateZ(360deg);
+    }
+}
+
+/* waterdrop */
+
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+.waterdrop{
+    position: relative;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -20px;
+
+    animation-name: waterdropFall;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1, 0.04, 1, 0.14);
+    z-index: 1;
+}
+
+.waterdrop::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -12px;
+}
+
+@keyframes waterdropFall {
+    to {
+        transform: translateY(500px);
+    }
+}
+
+.waves {
+    display: block;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+
+    width: 0;
+    height: 0;
+   
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+    opacity: 0;
+
+    animation-name: wave1Move;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.waves::before {
+    content: '';
+    display: block;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    animation-name: wave2Move;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes wave1Move {
+    from {
+        border-width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 250px;
+        height: 75px;
+        border-width: 6px;
+    }
+}
+
+@keyframes wave2Move {
+    from {
+        border-width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 350px;
+        height: 100px;
+        border-width: 6px;
+        opacity: 0;
+        top: -15px;
+        left: -53px;
+    }
+}
