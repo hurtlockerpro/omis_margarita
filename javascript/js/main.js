@@ -242,6 +242,7 @@ function showCars()
         if (index == 3) customClass = 'vipCar'
 
         ol.innerHTML += '<li class="' + customClass + '">' + cars[index] +  '</li>'
+        //x += 1 // 2
     }
 }
 
@@ -253,3 +254,26 @@ btn.addEventListener('click', event => {
 
 // x = '10'
 // x += 1 -> '10' + 1 = 101
+
+
+let btnShiftRight = document.getElementById('btnShiftRight')
+let btnShiftLeft = document.getElementById('btnShiftLeft')
+let square = document.getElementsByClassName('square')
+
+let leftLength = 10
+let moveStep = 20
+
+btnShiftRight.addEventListener('click', info => {
+    console.log(info);
+    if (info.ctrlKey == true)
+    {
+        leftLength += moveStep
+        square[0].style.left = leftLength + 'px'
+    }
+})
+
+btnShiftLeft.addEventListener('click', event => {
+    leftLength -= moveStep
+    square[0].style.left = leftLength + 'px'
+})
+

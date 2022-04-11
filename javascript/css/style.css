@@ -4,3 +4,18 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.square {
+    display: block;
+    background-color: bisque;
+    position: relative;
+}
+
+.square100x100{
+    width: 100px;
+    height: 100px;
+}
+
+.bg-green {
+    background-color: green;
+}
