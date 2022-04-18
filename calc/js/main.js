@@ -87,3 +87,119 @@ function changeLastSymbol(currentSymbol){
         result.value += currentSymbol
     }
 }
+
+
+
+
+// 1 == '1' : left equal to right
+// 1 === 1 ->  true -> type comparison
+// 1(number) === '1'(string) -> false
+
+// != NOT  1 != 2 -> true
+// !== NOT 1(number) !== '2'(string) -> true
+
+// typeof 1  -> 'number'
+// typeof '1'  -> 'string'
+
+function myFunction (a, n){
+    return a.substring(n-1, n)
+}
+/*
+ 0123456
+'zyxbwpl'
+['z', 'y', 'x', '']
+[2]
+*/
+
+console.log(myFunction('abcd',1));
+console.log(myFunction('zyxbwpl',5));
+console.log(myFunction('gfedcba',3));
+
+
+
+function myFunction2 (a){
+
+    let count = a.length / 2
+
+    // 2.5
+    if (!Number.isInteger(count))
+    {
+        throw new Error('Number is not an integer')
+        //console.log('Number is not an integer');
+        //alert('Number is not an integer')
+    }
+
+    return a.slice(0, count)
+}
+
+//console.log(myFunction2('abcde'));
+
+function myFunction3(a)
+{
+    // 4 / 2 = 2.0 // number,  double  2.0 2.4
+
+
+    let str = 'a/b/c/d'
+    //console.log(str[1]);
+    console.log(str.split('/'));
+
+    console.log((a % 2));
+
+
+
+
+
+    return  (a % 2) == 0 ? false : true
+}
+myFunction3(5)
+//myFunction3(10)
+
+
+
+function myFunction4(a)
+{
+    return a.toFixed(2)
+}
+
+function myFunction5 (a)
+{
+    return a.toString().split('')
+}
+
+
+
+function myFunction6(a, b)
+{
+    function func2(x){
+        return x.replace('%','');
+    }
+    const func = x => x.replace('%','');
+    const first = func2(a);
+
+    a = a.replace('%', '')
+    b = b.replace('%', '').split('').reverse().join('')
+
+    return  a.charAt(0).toUpperCase() + a.slice(1) + b 
+}
+
+
+console.log(myFunction6('java', 'tpi%rcs'));
+
+
+function myFunction7 (a, b)
+{
+    let result = ''
+    let loopNr = 1
+    for(let index = a.length - 1; index >= 0; index--){
+        if (loopNr % 3 === 0)
+        {
+            result = b + a[index] + result
+        } else {
+            result = a[index] + result
+        }
+        loopNr++
+    }
+    return result 
+}
+
+console.log(myFunction7('1234567','.'));
