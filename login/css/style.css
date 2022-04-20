@@ -4,11 +4,17 @@ body {
     background: rgb(209,67,210);
     background: linear-gradient(260deg, rgba(209,67,210,1) 0%, rgba(80,71,217,1) 100%);
     font-family: 'Roboto', sans-serif; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .mainLoginBox{
-    width: 80%; /* px -> em, rem  */
-    height: 250px;
+    width: 450px; /* px -> em, rem  */
+    /*height: 250px;*/
     border: 1px solid gray;
     /* 
     border-width: 1px;
@@ -21,8 +27,6 @@ body {
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5); 
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
     background-color: white;
-    margin: auto;
-    margin-top: 146px;
 }
 .leftCol{
     width: 50%;
@@ -33,6 +37,7 @@ body {
     width: 50%;
     float: right;
     text-align: center;
+    padding: 10px;
 }
 
 .mainLoginBox img {
@@ -69,8 +74,8 @@ input[name="username"], input[name="password"] {
 
 input[type=button] {
     background-color: rgb(3, 182, 3);
-    border-width: 1px;
-    border-style: solid;
+   /*border-width: 1px;
+    border-style: solid;*/
     border-color: rgb(18, 151, 0);
     text-transform: capitalize;
     color: white;
@@ -113,7 +118,7 @@ input[type=button] {
 #forgotLink:visited {
     color: green;
 }
-
+/*
 ul li:first-child {
     font-weight: bold;
 }
@@ -121,7 +126,7 @@ ul li:first-child {
 ul li:last-child {
     font-weight: bold;
     color: blue;
-}
+}*/
 
 ul li:nth-child(3) {
     font-weight: bold;
@@ -129,7 +134,7 @@ ul li:nth-child(3) {
 }
 
 /* */
-
+/*
 #pseudoTest::before {
     content: "\f084";
     font-family:"Font Awesome 5 Free";
@@ -149,11 +154,12 @@ ul li:nth-child(3) {
     font-size: 20px;
 }
 
+*/
+
 .withIcon::before {
     content: "\f084";
     font-family:"Font Awesome 5 Free";
     font-weight: 900;
-    border: 1px solid red;
     position: absolute;
     top: 6px;
     left: 33px;
