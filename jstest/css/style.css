@@ -1,0 +1,17 @@
+
+.text-v1 {
+    color: red;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.text-v2 {
+    color: blue;
+    text-decoration: underline;
+    letter-spacing: 10px;
+}
+
+.myNewClass::first-letter {
+    font-size: 50px;
+    color: blueviolet;
+}
